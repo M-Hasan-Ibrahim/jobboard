@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  margin: 0;
+  height: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+}
+
+.home {
+  height: 75vh;
+
+  background-color: #d95a5a;
+}
+
+.jobs-span-word {
+  color: #5bda5b;
+}
+
+footer {
+  height: 15vh;
+  background-color: #252525;
+}
