@@ -47,9 +47,7 @@ const Home = () => {
         <div>
           <h1 className="font-bold text-slate-500 text-lg ">Socials</h1>
           <h2>
-            <a href="https://www.instagram.com/eazen023/" target="_blanck">
-              Instagram
-            </a>
+            <a>Instagram</a>
           </h2>
           <h2>
             <a
