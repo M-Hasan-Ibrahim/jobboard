@@ -7,20 +7,21 @@ import SignIn from "./components/Login/SigninPage/Signin";
 import SignUp from "./components/Login/SignupPage/Signup";
 import Contact from "./components/Contact/Contact";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
 

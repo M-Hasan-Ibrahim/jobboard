@@ -13,6 +13,13 @@ body {
   background-color: #d95a5a;
 }
 
+.active-nav-item:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #cf3131;
+  transform: scaleX(1);
+}
+
 .nav-item:after {
   display: block;
   content: "";

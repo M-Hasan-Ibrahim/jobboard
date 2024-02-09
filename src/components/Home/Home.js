@@ -53,7 +53,7 @@ const Home = () => {
           </h2>
           <h2>
             <a
-              href="https://www.linkedin.com/in/mohamad-hasan-ibrahim/"
+              href="https://www.linkedin.com/in/mohamad-hasan-ibrahim-275933289/"
               target="_blanck"
             >
               Linkedin
