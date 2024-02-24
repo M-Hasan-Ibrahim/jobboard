@@ -44,7 +44,7 @@ const SignIn = () => {
               className="inputBoxes ml-2.5"
             />
             <Link
-              to="/forgot-password"
+              // to="/forgot-password"
               className="underline text-blue-400 text-sm ml-2.5 cursor-pointer"
             >
               Forgot password?
