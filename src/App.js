@@ -1,27 +1,32 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
-import SignIn from "./components/Login/SigninPage/Signin";
-import SignUp from "./components/Login/SignupPage/Signup";
-import Contact from "./components/Contact/Contact";
+import {
+  Navbar,
+  Home,
+  SignIn,
+  SignUp,
+  Contact,
+  BrowseJobs,
+  PostJobs,
+} from "./components";
 
-const App = () => {
-  return (
-    <Router>
-      <Navbar />
+const App = () => (
+  <Router>
+    <Navbar />
 
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
-  );
-};
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="browse-jobs" element={<BrowseJobs />} />
+      <Route path="/contact" element={<Contact />} />
+
+      <Route path="/sign-in" element={<SignIn />} />
+      <Route path="/sign-up" element={<SignUp />} />
+      <Route path="post-a-job" element={<PostJobs />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
 

@@ -3,7 +3,9 @@ import { useState } from "react";
 // import axios from "axios";
 import { Link } from "react-router-dom";
 
-import "../Login.css";
+import "./Login.css";
+
+import RightSideSwitch from "./innerComponents/RightSideSwitch";
 
 const SignUp = () => {
   const [firstName, setFirstName] = useState("");
@@ -156,7 +158,7 @@ const SignUp = () => {
           {/* submit button */}
           <button
             type="submit"
-            className="bg-black w-1/3 text-white rounded-3xl text-[22px] p-2 translate-x-full"
+            className="bg-black w-1/3 text-white rounded-3xl text-[18px] p-2 translate-x-full"
           >
             Sign Up !
           </button>
@@ -165,22 +167,12 @@ const SignUp = () => {
 
       {/* sign in side */}
 
-      <div className="signup-container flex justify-around items-center flex-col bg-slate-950 text-white rounded-2xl">
-        <h1 className="font-bold w-5/6 ">Already Have an Account?</h1>
-
-        <p className="text-base w-2/3">
-          Welcome back! Sign in with your account to join us!
-        </p>
-
-        <Link to="/sign-in" className="flex items-center justify-center w-3/4">
-          <button
-            type="submit"
-            className="bg-black w-full text-white rounded-3xl text-[22px] p-1  border-white border-2"
-          >
-            Sign In !
-          </button>
-        </Link>
-      </div>
+      <RightSideSwitch
+        header="Already Have an Account?"
+        paragraph="Welcome back! Sign in with your account to join us!"
+        button="Sign In!"
+        destination="/sign-in"
+      />
     </main>
   );
 };

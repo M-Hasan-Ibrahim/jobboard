@@ -11,6 +11,8 @@ body {
 .home {
   height: 75vh;
 
+  width: 100%;
+
   background-color: #d95a5a;
 }
 

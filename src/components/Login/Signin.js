@@ -1,34 +1,16 @@
 import React from "react";
-import "../Login.css";
+import "./Login.css";
 import { useState } from "react";
 // import axios from "axios";
 import { Link } from "react-router-dom";
+
+import RightSideSwitch from "./innerComponents/RightSideSwitch";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const emailHandler = (e) => setEmail(e.target.value);
   const [password, setPassword] = useState("");
   const passwordHandler = (e) => setPassword(e.target.value);
-
-  //   const submitHander = async (e) => {
-  //     e.preventDefault();
-
-  //     const loginInfo = {
-  //       email: email,
-  //       password: password,
-  //     };
-  //     const response = await axios.post(
-  //       "http://localhost:5000/users/login",
-  //       loginInfo,
-  //       { withCredentials: true }
-  //     );
-
-  //     if (response.data.status === "failed") {
-  //       alert(response.data.message);
-  //     } else {
-  //       console.log(response.data);
-  //     }
-  //   };
 
   return (
     <main className="main-container flex items-center justify-around">
@@ -79,31 +61,19 @@ const SignIn = () => {
           {/* submit button */}
           <button
             type="submit"
-            className="bg-black w-1/3 text-white rounded-3xl text-[22px] p-2 translate-x-full"
+            className="bg-black w-1/3 text-white rounded-3xl text-[18px] p-2 translate-x-full"
           >
             Sign In !
           </button>
         </form>
       </div>
 
-      {/* sign up side */}
-
-      <div className="signup-container flex justify-around items-center flex-col bg-slate-950 text-white rounded-2xl">
-        <h1 className="font-bold w-5/6 ">Don't Have an Account?</h1>
-
-        <p className="text-base w-2/3">
-          Sign up to join us! It only takes few minutes!
-        </p>
-
-        <Link to="/sign-up" className="flex items-center justify-center w-3/4">
-          <button
-            type="button"
-            className="bg-black w-full text-white rounded-3xl text-[22px] p-1  border-white border-2"
-          >
-            Sign Up !
-          </button>
-        </Link>
-      </div>
+      <RightSideSwitch
+        header="Don't Have an Account?"
+        paragraph="Sign up to join us! It only takes few minutes!"
+        button="Sign Up!"
+        destination="/sign-up"
+      />
     </main>
   );
 };

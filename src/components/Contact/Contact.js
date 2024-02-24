@@ -17,12 +17,9 @@ const Contact = () => {
         </h2>
 
         <form
-          action={
-            "mailto: mohamadhasan0711@gmail.com?subject= " +
-            { subject } +
-            "&body= " +
-            { body }
-          }
+          action={`
+            mailto: mohamadhasan0711@gmail.com?subject=${subject}&body=${body}
+          `}
           method="post"
           enctype="text/plain"
           className="space-y-8"

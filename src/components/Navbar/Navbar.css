@@ -13,13 +13,7 @@ body {
   background-color: #d95a5a;
 }
 
-.active-nav-item:after {
-  display: block;
-  content: "";
-  border-bottom: solid 3px #cf3131;
-  transform: scaleX(1);
-}
-
+/* Hover Animation */
 .nav-item:after {
   display: block;
   content: "";
@@ -36,6 +30,14 @@ body {
 .nav-item.fromLeft:after {
   transform-origin: 0% 50%;
 }
+
+.active-nav-item:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #cf3131;
+  transform: scaleX(1);
+}
+/* End of Hover Animation */
 
 .post-job-button {
   background-color: #4bb64b;
