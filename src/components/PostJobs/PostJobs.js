@@ -121,7 +121,7 @@ const PostJobs = () => {
           </div>
 
           <div className="post-button w-1/6 flex justify-center rounded-xl p-2">
-            <button type="submit">Send message</button>
+            <button type="submit">Post The Job</button>
           </div>
         </form>
       </div>
