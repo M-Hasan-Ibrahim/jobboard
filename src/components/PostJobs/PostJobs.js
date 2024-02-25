@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 import JobPostList from "../../DATA/JobPostList";
 
+import "./PostJobs.css";
+
 const PostJobs = () => {
   const [name, setName] = useState("");
   const nameHandler = (e) => setName(e.target.value);
@@ -118,7 +120,7 @@ const PostJobs = () => {
             ></textarea>
           </div>
 
-          <div className="post-button">
+          <div className="post-button w-1/6 flex justify-center rounded-xl p-2">
             <button type="submit">Send message</button>
           </div>
         </form>
