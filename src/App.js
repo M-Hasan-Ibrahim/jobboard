@@ -11,22 +11,24 @@ import {
   PostJobs,
 } from "./components";
 
-const App = () => (
-  <Router>
-    <Navbar />
+const App = () => {
+  return (
+    <Router>
+      <Navbar />
 
-    <Routes>
-      <Route index element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="browse-jobs" element={<BrowseJobs />} />
-      <Route path="/contact" element={<Contact />} />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="browse-jobs" element={<BrowseJobs />} />
+        <Route path="/contact" element={<Contact />} />
 
-      <Route path="/sign-in" element={<SignIn />} />
-      <Route path="/sign-up" element={<SignUp />} />
-      <Route path="post-a-job" element={<PostJobs />} />
-    </Routes>
-  </Router>
-);
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="post-a-job" element={<PostJobs />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
 

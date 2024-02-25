@@ -65,4 +65,6 @@ const JobPostList = [
   },
 ];
 
-export default JobPostList;
+const JobPostListReversed = JobPostList.map((item) => item).reverse();
+
+export default JobPostListReversed;

@@ -21,7 +21,7 @@ const NavItems = () => {
         <div className="nav-items w-3/4">
           <ul className="nav-list flex items-center justify-around">
             {navLinks.map((nav) => (
-              <li className={isActive(nav.id)}>
+              <li className={isActive(nav.id)} key={nav.id}>
                 <Link to={nav.destination} onClick={() => setActiveTab(nav.id)}>
                   {nav.title}
                 </Link>

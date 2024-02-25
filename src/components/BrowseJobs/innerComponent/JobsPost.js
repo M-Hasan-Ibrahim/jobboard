@@ -30,7 +30,7 @@ const JobsPost = (props) => {
         className="footer"
         action={`mailto: ${props.email}`}
         method="post"
-        enctype="text/plain"
+        encType="text/plain"
       >
         <button
           type="submit"

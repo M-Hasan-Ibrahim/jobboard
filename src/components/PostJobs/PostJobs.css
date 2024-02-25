@@ -1,0 +1,8 @@
+.post-button {
+  background-color: #4bb64b;
+  transition: all 300ms ease-in-out;
+}
+
+.post-button:hover {
+  box-shadow: inset 150px 0 0 0 #5bda5b;
+}

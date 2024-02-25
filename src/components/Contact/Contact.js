@@ -21,7 +21,7 @@ const Contact = () => {
             mailto: mohamadhasan0711@gmail.com?subject=${subject}&body=${body}
           `}
           method="post"
-          enctype="text/plain"
+          encType="text/plain"
           className="space-y-8"
         >
           <div>
